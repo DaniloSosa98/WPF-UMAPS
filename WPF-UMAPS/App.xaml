@@ -4,6 +4,16 @@
              xmlns:local="clr-namespace:WPF_UMAPS"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+
+        <ResourceDictionary>
+
+            <ResourceDictionary.MergedDictionaries>
+
+                <ResourceDictionary Source="Dock Style.xaml"/>
+
+            </ResourceDictionary.MergedDictionaries>
+
+        </ResourceDictionary>
+
     </Application.Resources>
 </Application>

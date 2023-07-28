@@ -24,5 +24,10 @@ namespace WPF_UMAPS
         {
             InitializeComponent();
         }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
