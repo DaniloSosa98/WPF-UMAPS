@@ -6,19 +6,20 @@
         xmlns:local="clr-namespace:WPF_UMAPS"
         mc:Ignorable="d"
         Title="MainWindow"
-        Height="740" 
-        Width="1220"
+        Height="619" 
+        Width="1021"
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="NoResize"
         Background="Transparent"
-        AllowsTransparency="True">
+        AllowsTransparency="True"
+        MouseDown="Window_MouseDown">
 
     <Grid>
 
         <!--// Background //-->
 
-        <Border Background="#1C1D31"
+        <Border Background="#FFFFFF"
                 CornerRadius="25"/>
 
         <!--// Main Grid //-->
@@ -26,18 +27,18 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="280"/>
-                <ColumnDefinition Width="280"/>
-                <ColumnDefinition Width="280"/>
-                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="280*"/>
+                <ColumnDefinition Width="280*"/>
+                <ColumnDefinition Width="280*"/>
+                <ColumnDefinition Width="280*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <Grid.RowDefinitions>
-                <RowDefinition Height="140"/>
-                <RowDefinition Height="360"/>
-                <RowDefinition Height="170"/>
-                <RowDefinition Height="70"/>
+                <RowDefinition Height="140*"/>
+                <RowDefinition Height="360*"/>
+                <RowDefinition Height="170*"/>
+                <RowDefinition Height="70*"/>
             </Grid.RowDefinitions>
 
             <!--// Panel 1 //-->
@@ -222,48 +223,17 @@
 
             <!--// Header //-->
 
-            <TextBlock Grid.Row="0"
-                       Grid.Column="1"
-                       Grid.ColumnSpan="2"
-                       Text="C #  D E S I G N  P R O"
-                       Foreground="#CDD7E0"
-                       FontFamily="Oswald"
-                       FontSize="36"
-                       Margin="20,50,0,0"/>
-
-            <TextBlock Grid.Row="0"
-                       Grid.Column="1"
-                       Grid.ColumnSpan="2"
-                       Text="D E S I G N  T H E  I N T E R F A C E"
-                       Foreground="#A6B8C8"
-                       FontFamily="Roboto"
-                       FontSize="12"
-                       HorizontalAlignment="Right"
-                       VerticalAlignment="Bottom"
-                       Margin="0,0,238,23"/>
+            <Image Grid.Row="0"
+                   Grid.Column="1"
+                   Source="Imagenes/logo-umaps.png"
+                   Margin="0,20,0,0"/>
 
             <!--// Footer //-->
 
             <Border Grid.Row="3"
                     Grid.ColumnSpan="6"
-                    CornerRadius="0,0,20,20">
-
-                <Border.Background>
-
-                    <LinearGradientBrush StartPoint="0.75,0"
-                                         EndPoint="0,1">
-
-                        <GradientStop Color="#DF208F"
-                                      Offset="0.1"/>
-
-                        <GradientStop Color="#DFCF20"
-                                      Offset="0.8"/>
-
-                    </LinearGradientBrush>
-
-                </Border.Background>
-
-            </Border>
+                    CornerRadius="0,0,20,20"
+                    Background="#83d9e5"/>
 
             <!--// Dock Bar //-->
 
@@ -273,55 +243,49 @@
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="740"/>
+                    <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
                 <Border Grid.Column="1"
-                        Background="#323345"
+                        Background="#83d9e5"
                         CornerRadius="10,10,0,0"
                         Margin="0,85,0,0">
 
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="20"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="70"/>
-                            <ColumnDefinition Width="20"/>
+                            <ColumnDefinition Width="0.25*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="0.25*"/>
                         </Grid.ColumnDefinitions>
 
-                        <!--// Home //-->
+                        <!--// Pactware //-->
 
                         <Button Grid.Column="1"
-                                x:Name="home"
+                                x:Name="pactware"
                                 Style="{StaticResource DockBtnStyle}">
 
                             <Button.Background>
 
-                                <ImageBrush ImageSource="Assets/img_home.png"
+                                <ImageBrush ImageSource="Imagenes/pactware.png"
                                             Stretch="Uniform"/>
 
                             </Button.Background>
 
                             <Popup Width="70"
-                                   HorizontalOffset="-12"
-                                   PlacementTarget="{Binding ElementName=home}"
-                                   IsOpen="{Binding ElementName=home, Path=IsMouseOver, Mode=OneWay}"
+                                   HorizontalOffset="-15"
+                                   PlacementTarget="{Binding ElementName=pactware}"
+                                   IsOpen="{Binding ElementName=pactware, Path=IsMouseOver, Mode=OneWay}"
                                    Style="{StaticResource PopupStyle}">
 
                                 <Grid>
 
                                     <Border Style="{StaticResource border}">
 
-                                        <TextBlock Text="Home"
+                                        <TextBlock Text="Pactware"
                                                    Style="{StaticResource PopupText}"/>
 
                                     </Border>
@@ -334,30 +298,30 @@
 
                         </Button>
 
-                        <!--// Settings //-->
+                        <!--// MeterView //-->
 
                         <Button Grid.Column="2"
-                                x:Name="setting"
+                                x:Name="meterview"
                                 Style="{StaticResource DockBtnStyle}">
 
                             <Button.Background>
 
-                                <ImageBrush ImageSource="Assets/img_settings.png"
+                                <ImageBrush ImageSource="Imagenes/meterview.png"
                                             Stretch="Uniform"/>
 
                             </Button.Background>
 
                             <Popup Width="85"
-                                   HorizontalOffset="-20"
-                                   PlacementTarget="{Binding ElementName=setting}"
-                                   IsOpen="{Binding ElementName=setting, Path=IsMouseOver, Mode=OneWay}"
+                                   HorizontalOffset="-23"
+                                   PlacementTarget="{Binding ElementName=meterview}"
+                                   IsOpen="{Binding ElementName=meterview, Path=IsMouseOver, Mode=OneWay}"
                                    Style="{StaticResource PopupStyle}">
 
                                 <Grid>
 
                                     <Border Style="{StaticResource border}">
 
-                                        <TextBlock Text="Settings"
+                                        <TextBlock Text="MeterView"
                                                    Style="{StaticResource PopupText}"/>
 
                                     </Border>
@@ -370,30 +334,30 @@
 
                         </Button>
 
-                        <!--// Mail //-->
+                        <!--// Simatic //-->
 
                         <Button Grid.Column="3"
-                                x:Name="mail"
+                                x:Name="simatic"
                                 Style="{StaticResource DockBtnStyle}">
 
                             <Button.Background>
 
-                                <ImageBrush ImageSource="Assets/img_mail.png"
+                                <ImageBrush ImageSource="Imagenes/simatic.png"
                                             Stretch="Uniform"/>
 
                             </Button.Background>
 
                             <Popup Width="60"
-                                   HorizontalOffset="-6"
-                                   PlacementTarget="{Binding ElementName=mail}"
-                                   IsOpen="{Binding ElementName=mail, Path=IsMouseOver, Mode=OneWay}"
+                                   HorizontalOffset="-10"
+                                   PlacementTarget="{Binding ElementName=simatic}"
+                                   IsOpen="{Binding ElementName=simatic, Path=IsMouseOver, Mode=OneWay}"
                                    Style="{StaticResource PopupStyle}">
 
                                 <Grid>
 
                                     <Border Style="{StaticResource border}">
 
-                                        <TextBlock Text="Mail"
+                                        <TextBlock Text="Simatic"
                                                    Style="{StaticResource PopupText}"/>
 
                                     </Border>
@@ -406,246 +370,30 @@
 
                         </Button>
 
-                        <!--// Visual Studio //-->
+                        <!--// Device Integration Manager //-->
 
                         <Button Grid.Column="4"
-                                x:Name="vs"
+                                x:Name="dim"
                                 Style="{StaticResource DockBtnStyle}">
 
                             <Button.Background>
 
-                                <ImageBrush ImageSource="Assets/img_vs.png"
+                                <ImageBrush ImageSource="Imagenes/dim.png"
                                             Stretch="Uniform"/>
 
                             </Button.Background>
 
-                            <Popup Width="118"
-                                   HorizontalOffset="-35"
-                                   PlacementTarget="{Binding ElementName=vs}"
-                                   IsOpen="{Binding ElementName=vs, Path=IsMouseOver, Mode=OneWay}"
+                            <Popup Width="50"
+                                   HorizontalOffset="-3"
+                                   PlacementTarget="{Binding ElementName=dim}"
+                                   IsOpen="{Binding ElementName=dim, Path=IsMouseOver, Mode=OneWay}"
                                    Style="{StaticResource PopupStyle}">
 
                                 <Grid>
 
                                     <Border Style="{StaticResource border}">
 
-                                        <TextBlock Text="Visual Studio"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
-
-                                </Grid>
-
-                            </Popup>
-
-                        </Button>
-
-                        <!--// Chrome //-->
-
-                        <Button Grid.Column="5"
-                                x:Name="chrome"
-                                Style="{StaticResource DockBtnStyle}">
-
-                            <Button.Background>
-
-                                <ImageBrush ImageSource="Assets/img_chrome.png"
-                                            Stretch="Uniform"/>
-
-                            </Button.Background>
-
-                            <Popup Width="85"
-                                   HorizontalOffset="-19"
-                                   PlacementTarget="{Binding ElementName=chrome}"
-                                   IsOpen="{Binding ElementName=chrome, Path=IsMouseOver, Mode=OneWay}"
-                                   Style="{StaticResource PopupStyle}">
-
-                                <Grid>
-
-                                    <Border Style="{StaticResource border}">
-
-                                        <TextBlock Text="Chrome"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
-
-                                </Grid>
-
-                            </Popup>
-
-                        </Button>
-
-                        <!--// YouTube //-->
-
-                        <Button Grid.Column="6"
-                                x:Name="youtube"
-                                Style="{StaticResource DockBtnStyle}">
-
-                            <Button.Background>
-
-                                <ImageBrush ImageSource="Assets/img_youtube.png"
-                                            Stretch="Uniform"/>
-
-                            </Button.Background>
-
-                            <Popup Width="85"
-                                   HorizontalOffset="-20"
-                                   PlacementTarget="{Binding ElementName=youtube}"
-                                   IsOpen="{Binding ElementName=youtube, Path=IsMouseOver, Mode=OneWay}"
-                                   Style="{StaticResource PopupStyle}">
-
-                                <Grid>
-
-                                    <Border Style="{StaticResource border}">
-
-                                        <TextBlock Text="YouTube"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
-
-                                </Grid>
-
-                            </Popup>
-
-                        </Button>
-
-                        <!--// Word //-->
-
-                        <Button Grid.Column="7"
-                                x:Name="word"
-                                Style="{StaticResource DockBtnStyle}">
-
-                            <Button.Background>
-
-                                <ImageBrush ImageSource="Assets/img_word.png"
-                                            Stretch="Uniform"/>
-
-                            </Button.Background>
-
-                            <Popup Width="60"
-                                   HorizontalOffset="-8"
-                                   PlacementTarget="{Binding ElementName=word}"
-                                   IsOpen="{Binding ElementName=word, Path=IsMouseOver, Mode=OneWay}"
-                                   Style="{StaticResource PopupStyle}">
-
-                                <Grid>
-
-                                    <Border Style="{StaticResource border}">
-
-                                        <TextBlock Text="Word"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
-
-                                </Grid>
-
-                            </Popup>
-
-                        </Button>
-
-                        <!--// Photoshop //-->
-
-                        <Button Grid.Column="8"
-                                x:Name="ps"
-                                Style="{StaticResource DockBtnStyle}">
-
-                            <Button.Background>
-
-                                <ImageBrush ImageSource="Assets/img_photoshop.png"
-                                            Stretch="Uniform"/>
-
-                            </Button.Background>
-
-                            <Popup Width="105"
-                                   HorizontalOffset="-27"
-                                   PlacementTarget="{Binding ElementName=ps}"
-                                   IsOpen="{Binding ElementName=ps, Path=IsMouseOver, Mode=OneWay}"
-                                   Style="{StaticResource PopupStyle}">
-
-                                <Grid>
-
-                                    <Border Style="{StaticResource border}">
-
-                                        <TextBlock Text="Photoshop"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
-
-                                </Grid>
-
-                            </Popup>
-
-                        </Button>
-
-                        <!--// Downloads //-->
-
-                        <Button Grid.Column="9"
-                                x:Name="download"
-                                Style="{StaticResource DockBtnStyle}">
-
-                            <Button.Background>
-
-                                <ImageBrush ImageSource="Assets/img_downloads.png"
-                                            Stretch="Uniform"/>
-
-                            </Button.Background>
-
-                            <Popup Width="105"
-                                   HorizontalOffset="-28"
-                                   PlacementTarget="{Binding ElementName=download}"
-                                   IsOpen="{Binding ElementName=download, Path=IsMouseOver, Mode=OneWay}"
-                                   Style="{StaticResource PopupStyle}">
-
-                                <Grid>
-
-                                    <Border Style="{StaticResource border}">
-
-                                        <TextBlock Text="Downloads"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
-
-                                </Grid>
-
-                            </Popup>
-
-                        </Button>
-
-                        <!--// Trash //-->
-
-                        <Button Grid.Column="10"
-                                x:Name="trash"
-                                Style="{StaticResource DockBtnStyle}">
-
-                            <Button.Background>
-
-                                <ImageBrush ImageSource="Assets/img_trash.png"
-                                            Stretch="Uniform"/>
-
-                            </Button.Background>
-
-                            <Popup Width="65"
-                                   HorizontalOffset="-10"
-                                   PlacementTarget="{Binding ElementName=trash}"
-                                   IsOpen="{Binding ElementName=trash, Path=IsMouseOver, Mode=OneWay}"
-                                   Style="{StaticResource PopupStyle}">
-
-                                <Grid>
-
-                                    <Border Style="{StaticResource border}">
-
-                                        <TextBlock Text="Trash"
+                                        <TextBlock Text="DIM"
                                                    Style="{StaticResource PopupText}"/>
 
                                     </Border>
@@ -666,48 +414,11 @@
 
         </Grid>
 
-        <!--// User //-->
+        <!--// Minimize Button //-->
 
-        <Grid Height="50"
-              Width="50"
-              HorizontalAlignment="Right"
-              VerticalAlignment="Top"
-              Margin="0,30,73,0">
-
-            <Button x:Name="user"
-                    Style="{StaticResource UserStyle}">
-
-                <Button.Background>
-
-                    <ImageBrush ImageSource="Assets/img_user.png"
-                                Stretch="Uniform"/>
-
-                </Button.Background>
-
-                <Popup Width="137"
-                       HorizontalOffset="-93"
-                       PlacementTarget="{Binding ElementName=user}"
-                       IsOpen="{Binding ElementName=user, Path=IsMouseOver, Mode=OneWay}"
-                       Style="{StaticResource user_popup}">
-
-                    <Grid>
-
-                        <Border Style="{StaticResource user_border}">
-
-                            <TextBlock Text="Danilo Sosa"
-                                       Style="{StaticResource PopupText}"/>
-
-                        </Border>
-
-                        <Path Style="{StaticResource user_arrow_path}"/>
-
-                    </Grid>
-
-                </Popup>
-
-            </Button>
-
-        </Grid>
+        <Button x:Name="MiniBtn"
+                Style="{StaticResource MiniBtnStyle}"
+                Click="MiniBtn_Click"/>
 
         <!--// Exit Button //-->
 

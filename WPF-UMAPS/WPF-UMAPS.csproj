@@ -20,11 +20,24 @@
     <None Remove="Assets\img_vs.png" />
     <None Remove="Assets\img_word.png" />
     <None Remove="Assets\img_youtube.png" />
+    <None Remove="Assets\logo3.png" />
     <None Remove="Assets\shutdown_def.png" />
     <None Remove="Assets\shutdown_mo.png" />
+    <None Remove="Imagenes\dim.png" />
+    <None Remove="Imagenes\logo-umaps.png" />
+    <None Remove="Imagenes\meterview.png" />
+    <None Remove="Imagenes\mini-azul.png" />
+    <None Remove="Imagenes\mini-gris.png" />
+    <None Remove="Imagenes\pactware.png" />
+    <None Remove="Imagenes\salir-azul.png" />
+    <None Remove="Imagenes\salir-rojo.png" />
+    <None Remove="Imagenes\simatic.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\logo3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Assets\shutdown_def.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -68,6 +81,33 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\shutdown_mo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\logo-umaps.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\meterview.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\mini-azul.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\mini-gris.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\pactware.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\dim.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\salir-azul.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\salir-rojo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Imagenes\simatic.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
