@@ -37,7 +37,7 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="140*"/>
                 <RowDefinition Height="360*"/>
-                <RowDefinition Height="170*"/>
+                <RowDefinition Height="115*"/>
                 <RowDefinition Height="70*"/>
             </Grid.RowDefinitions>
 
@@ -53,10 +53,10 @@
                     <LinearGradientBrush StartPoint="0.75,0"
                                          EndPoint="0,1">
 
-                        <GradientStop Color="#DF208F"
+                        <GradientStop Color="#9c9c9c"
                                       Offset="0.1"/>
 
-                        <GradientStop Color="#DFCF20"
+                        <GradientStop Color="#83d9e5"
                                       Offset="0.8"/>
 
                     </LinearGradientBrush>
@@ -98,10 +98,10 @@
                     <LinearGradientBrush StartPoint="0.75,0"
                                          EndPoint="0,1">
 
-                        <GradientStop Color="#27BDE9"
+                        <GradientStop Color="#83d9e5"
                                       Offset="0.1"/>
 
-                        <GradientStop Color="#ABDB54"
+                        <GradientStop Color="#9c9c9c"
                                       Offset="0.8"/>
 
                     </LinearGradientBrush>
@@ -143,10 +143,10 @@
                     <LinearGradientBrush StartPoint="0.75,0"
                                          EndPoint="0,1">
 
-                        <GradientStop Color="#F96100"
+                        <GradientStop Color="#9c9c9c"
                                       Offset="0.1"/>
 
-                        <GradientStop Color="#E70B75"
+                        <GradientStop Color="#83d9e5"
                                       Offset="0.8"/>
 
                     </LinearGradientBrush>
@@ -188,10 +188,10 @@
                     <LinearGradientBrush StartPoint="0.75,0"
                                          EndPoint="0,1">
 
-                        <GradientStop Color="#06A4FB"
+                        <GradientStop Color="#83d9e5"
                                       Offset="0.1"/>
 
-                        <GradientStop Color="#B84EEB"
+                        <GradientStop Color="#9c9c9c"
                                       Offset="0.8"/>
 
                     </LinearGradientBrush>
@@ -250,7 +250,7 @@
                 <Border Grid.Column="1"
                         Background="#83d9e5"
                         CornerRadius="10,10,0,0"
-                        Margin="0,85,0,0">
+                        Margin="0,40,0,0">
 
                     <Grid>
                         <Grid.ColumnDefinitions>

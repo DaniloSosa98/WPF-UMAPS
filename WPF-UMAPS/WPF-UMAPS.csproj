@@ -9,20 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\img_chrome.png" />
-    <None Remove="Assets\img_downloads.png" />
-    <None Remove="Assets\img_home.png" />
-    <None Remove="Assets\img_mail.png" />
-    <None Remove="Assets\img_photoshop.png" />
-    <None Remove="Assets\img_settings.png" />
-    <None Remove="Assets\img_trash.png" />
-    <None Remove="Assets\img_user.png" />
-    <None Remove="Assets\img_vs.png" />
-    <None Remove="Assets\img_word.png" />
-    <None Remove="Assets\img_youtube.png" />
-    <None Remove="Assets\logo3.png" />
-    <None Remove="Assets\shutdown_def.png" />
-    <None Remove="Assets\shutdown_mo.png" />
     <None Remove="Imagenes\dim.png" />
     <None Remove="Imagenes\logo-umaps.png" />
     <None Remove="Imagenes\meterview.png" />
@@ -35,54 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Assets\logo3.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\shutdown_def.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Assets\img_user.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Resource Include="Assets\img_chrome.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_downloads.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_home.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_mail.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_photoshop.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_settings.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_trash.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_vs.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_word.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\img_youtube.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
-    <Resource Include="Assets\shutdown_mo.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="Imagenes\logo-umaps.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
