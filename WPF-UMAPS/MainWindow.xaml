@@ -36,9 +36,9 @@
 
             <Grid.RowDefinitions>
                 <RowDefinition Height="140*"/>
-                <RowDefinition Height="360*"/>
+                <RowDefinition Height="340*"/>
                 <RowDefinition Height="115*"/>
-                <RowDefinition Height="70*"/>
+                <RowDefinition Height="55*"/>
             </Grid.RowDefinitions>
 
             <!--// Panel 1 //-->
@@ -250,7 +250,7 @@
                 <Border Grid.Column="1"
                         Background="#83d9e5"
                         CornerRadius="10,10,0,0"
-                        Margin="0,40,0,0">
+                        Margin="0,40,0,-5">
 
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -266,7 +266,8 @@
 
                         <Button Grid.Column="1"
                                 x:Name="pactware"
-                                Style="{StaticResource DockBtnStyle}">
+                                Style="{StaticResource DockBtnStyle}"
+                                Click="pactware_Click">
 
                             <Button.Background>
 
@@ -302,7 +303,8 @@
 
                         <Button Grid.Column="2"
                                 x:Name="meterview"
-                                Style="{StaticResource DockBtnStyle}">
+                                Style="{StaticResource DockBtnStyle}"
+                                Click="meterview_Click">
 
                             <Button.Background>
 
@@ -338,7 +340,8 @@
 
                         <Button Grid.Column="3"
                                 x:Name="simatic"
-                                Style="{StaticResource DockBtnStyle}">
+                                Style="{StaticResource DockBtnStyle}"
+                                Click="simatic_Click">
 
                             <Button.Background>
 
@@ -374,7 +377,8 @@
 
                         <Button Grid.Column="4"
                                 x:Name="dim"
-                                Style="{StaticResource DockBtnStyle}">
+                                Style="{StaticResource DockBtnStyle}"
+                                Click="dim_Click">
 
                             <Button.Background>
 
