@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33712.159
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-UMAPS", "WPF-UMAPS\WPF-UMAPS.csproj", "{EAFF0CAD-89ED-455C-8942-06A7D79E41A0}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UMAPS-Installer", "UMAPS-Installer\UMAPS-Installer.vdproj", "{E063FF32-C8EC-4965-832F-F47C87D002BC}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "UMAPS", "UMAPS\UMAPS.vdproj", "{E29B1384-9403-4032-A165-070CE5CD1009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{EAFF0CAD-89ED-455C-8942-06A7D79E41A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAFF0CAD-89ED-455C-8942-06A7D79E41A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAFF0CAD-89ED-455C-8942-06A7D79E41A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E063FF32-C8EC-4965-832F-F47C87D002BC}.Debug|Any CPU.ActiveCfg = Debug
-		{E063FF32-C8EC-4965-832F-F47C87D002BC}.Release|Any CPU.ActiveCfg = Release
+		{E29B1384-9403-4032-A165-070CE5CD1009}.Debug|Any CPU.ActiveCfg = Debug
+		{E29B1384-9403-4032-A165-070CE5CD1009}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

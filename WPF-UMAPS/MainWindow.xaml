@@ -309,14 +309,9 @@
 
                                 <Grid>
 
-                                    <Border Style="{StaticResource border}">
+                                    
 
-                                        <TextBlock Text="Pactware"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
+          
 
                                 </Grid>
 
@@ -346,15 +341,9 @@
 
                                 <Grid>
 
-                                    <Border Style="{StaticResource border}">
+                                    
 
-                                        <TextBlock Text="MeterView"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
-
+                                    
                                 </Grid>
 
                             </Popup>
@@ -383,14 +372,9 @@
 
                                 <Grid>
 
-                                    <Border Style="{StaticResource border}">
+                                    
 
-                                        <TextBlock Text="Simatic"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
+                                    
 
                                 </Grid>
 
@@ -420,15 +404,9 @@
 
                                 <Grid>
 
-                                    <Border Style="{StaticResource border}">
+                                    
 
-                                        <TextBlock Text="DIM"
-                                                   Style="{StaticResource PopupText}"/>
-
-                                    </Border>
-
-                                    <Path Style="{StaticResource ArrowPath}"/>
-
+                                    
                                 </Grid>
 
                             </Popup>
