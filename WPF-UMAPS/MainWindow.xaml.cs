@@ -1,6 +1,9 @@
-﻿using System.Diagnostics;
+﻿using Microsoft.VisualBasic;
+using System;
+using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Threading;
 
 namespace WPF_UMAPS
 {
@@ -12,6 +15,16 @@ namespace WPF_UMAPS
         public MainWindow()
         {
             InitializeComponent();
+            DispatcherTimer LiveTime = new DispatcherTimer();
+            LiveTime.Interval = TimeSpan.FromSeconds(1);
+            LiveTime.Tick += FormatDT;
+            LiveTime.Start();
+        }
+
+        private void FormatDT(object sender, EventArgs e)
+        {
+            var dt = DateAndTime.Now;
+            Clock.Text = dt.ToString("f");
         }
 
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
